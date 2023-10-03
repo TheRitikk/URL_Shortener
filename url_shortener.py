@@ -3,7 +3,7 @@ import tkinter.scrolledtext as scrolledtext
 import requests
 
 def short_url():
-    api_key = "9f42b330545d88e96e2b7344a42f1bbe99f47"
+    api_key = "Cutt.ly-API-Key"
     url = url_entry.get()
     api_url = f"https://cutt.ly/api/api.php?key={api_key}&short={url}"
     data = requests.get(api_url).json()["url"]
